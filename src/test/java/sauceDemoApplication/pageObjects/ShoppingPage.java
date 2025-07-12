@@ -26,11 +26,12 @@ public class ShoppingPage extends BasePage {
 			cartElement.click();
 		}
 	}
-	public void links(String linkName) {
-		
+	public void links() {
+		System.out.println(linksElement.size());
 			for (int i = 0; i < linksElement.size(); i++) {
 				String textString=linksElement.get(i).getText();
 				System.out.println(textString);
+				
 			}
 	
 	}

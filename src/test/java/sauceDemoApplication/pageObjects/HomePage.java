@@ -17,14 +17,11 @@ public class HomePage extends BasePage {
     WebElement loginElement;
     
     public void login(String username , String password) {
-    	if (usernamElement.isDisplayed() && usernamElement.isEnabled()) {
+    	
     		usernamElement.sendKeys(username);
-		}
-		if (passwordElement.isDisplayed() && passwordElement.isEnabled()) {
+		
 			passwordElement.sendKeys(password);
-		}
-		if (loginElement.isDisplayed() && loginElement.isEnabled()) {
+		
 			loginElement.click();
-		}
 	}
 }
